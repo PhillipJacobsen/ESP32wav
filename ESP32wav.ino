@@ -4,6 +4,15 @@
 // See www.xtronical.com for write ups on sound, the hardware required and how to make
 // the wav files and include them in your code
 
+
+// link to installing library
+//   https://www.xtronical.com/the-dacaudio-library-download-and-installation/
+
+//playing and editing wav files.
+//  https://www.xtronical.com/basics/audio/dacs-for-sound/playing-wav-files/
+
+// https://www.xtronical.com/dacaudio-hardware/
+
 #include "SoundData.h"
 #include "XT_DAC_Audio.h"
 
@@ -20,6 +29,10 @@ void setup() {
   Serial.begin(115200);               // Not needed for sound, just to demo printing to the serial
                                       // Monitor whilst the sound plays, ensure your serial monitor
                                       // speed is set to this speed also.
+
+
+      DacAudio.DacVolume=50;        //set volume to 50%
+                                      
 }
 
 
